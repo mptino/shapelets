@@ -35,11 +35,15 @@ def cartesian1D(n: int, x1: Union[float,np.ndarray], beta: float) -> Union[float
     r""" 
     1D cartesian shapelet function as defined in ref. [1],
 
-    $$ S_{n}(x; \beta) = \beta^{-\frac{1}{2}}  \phi_{n}(\frac{x}{\beta}) $$
+    .. math::
+    
+        S_{n}(x; \beta) = \beta^{-\frac{1}{2}} \phi_{n}(\frac{x}{\beta})
 
-    with $$ \phi_n(x) = \left( 2^n \pi^{\frac{1}{2}} n! \right)^{-\frac{1}{2}} H_n(x) exp(-\frac{x^2}{2}) $$
+    .. math:: 
+        
+        \phi_n(x) = \left( 2^n \pi^{\frac{1}{2}} n! \right)^{-\frac{1}{2}} H_n(x) exp(-\frac{x^2}{2})
 
-    where $\phi_n$ is the dimensionless basis function, $\beta$ is the shapelet length scale, $H_n$ is a hermite polynomial of order $n$, and $n$ is the shapelet order parameter.
+    where :math:`\phi_n` is the dimensionless basis function, $\beta$ is the shapelet length scale, $H_n$ is a hermite polynomial of order $n$, and $n$ is the shapelet order parameter.
 
     Parameters
     ----------
